@@ -1,0 +1,21 @@
+domain: real_estate 
+rules: 
+  - type: "Gần_Khoảng cách"
+    regex:
+      - "(ra|cách|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông).{0,10}(vài|ít|chỉ).{0,10}b[uứúư][ơoớó]c\\s*ch[aâ]n"
+      - "(ra|cách|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông)(vài|ít|chỉ)?\\s?\\d+\\s?(m[.,]?\\s|km)"
+      - "(ra|cách|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông).{0,10}(vài|ít|chỉ)?.{0,10}\\d+\\s?(m[.,]?\\s|km)"
+      - "(ra|cách|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông).{0,10}(vài|ít|chỉ)?.{0,10}\\d+\\s?(phút|p\\s|ph\\s)\\s?đi\\s*xe"
+      - "(ra|cách|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông).{0,10}(vài|ít|chỉ)?.{0,10}\\d+\\s?(phút|p\\s|ph\\s)\\s?(?:[dđ]i\\s*b[ôộ]|b[uứúư][ơoớó]c\\s*ch[aâ]n|ch[aạ]y\\s*b[ôộ])"
+      - "(ra|cách|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông).{0,10}(gần hơn|nhỏ hơn|chưa tới|ít hơn).{0,10}\\d+\\s?km"
+      - "(vài|ít|chỉ)\\s*b[uứúư][ơoớó]c\\s*ch[aâ]n.{1,10}(ra|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông)"
+      - "(vài|ít|chỉ)?\\s?\\d+\\s?(m[.,]?\\s|km).{0,10}(ra|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông)"
+      - "(vài|ít|chỉ)?.{0,10}\\d+\\s?(m[.,]?\\s|km).{0,10}(ra|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông)"
+      - "(vài|ít|chỉ)?.{0,10}\\d+\\s?(phút|p\\s|ph\\s)\\s?đi\\s*xe.{0,10}(ra|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông)"
+      - "(vài|ít|chỉ)?.{0,10}\\d+\\s?(phút|p\\s|ph\\s)\\s?(?:[dđ]i\\s*b[ôộ]|b[uứúư][ơoớó]c\\s*ch[aâ]n|ch[aạ]y\\s*b[ôộ]).{0,10}(ra|cách|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông)"
+      - "(gần hơn|nhỏ hơn|chưa tới|ít hơn).{0,10}\\d+\\s?km.{0,10}(ra|cách|đến|tới|xuống)\\s*(sông|dòng\\s*sông|bờ\\s*sông)"
+     
+  - type: "Gần"
+    regex:
+      - "(g[ầâà]n|s[aá]t|view|ngay|m[ăặ]t|(view)?\\s*đ[oôóố]i\\s*di[ệêeẹ]n|(view)?\\s*tr[ưuụự]c\\s*di[eêẹệ]n|cạnh|ven|b[eê]n\\s*c[aạ]nh)\\s*(là|với)?\\s*(sông|dòng\\s*sông|bờ\\s*sông)"
+

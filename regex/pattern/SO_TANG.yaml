@@ -1,0 +1,6 @@
+domain: real_estate 
+rules: 
+
+  - type: "Số tầng"
+    regex: 
+      - "(\\d+(?:[.,]\\d+)?)\\s*(t[aàâầ]ng?|l[aàâầ]u)"
